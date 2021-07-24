@@ -1,0 +1,20 @@
+.arrow-icon-down, .arrow-icon-left, .arrow-icon-right{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    width: 15%;
+    height: 15%;
+    pointer-events: none;
+};
+
+.arrow-icon-down{
+    transform: rotateZ(45deg);
+    margin-bottom: 2px;
+};
+
+.arrow-icon-left{
+    transform: rotateZ(135deg);
+};
+
+.arrow-icon-right{
+    transform: rotateZ(-45deg);
+};

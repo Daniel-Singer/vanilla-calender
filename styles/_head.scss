@@ -1,0 +1,11 @@
+.calender__head{
+    height: $header-height;
+    width: 100%;
+    font-weight: normal;
+    @include flex(center,space-between);
+    h4{
+        margin: 0;
+        margin-left: $s-padding;
+        font-weight: 400;
+    };
+};

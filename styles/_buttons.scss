@@ -1,0 +1,13 @@
+.toggle-calender-button, .prev-toggle, .next-toggle{
+    height: $header-height;
+    width: $header-height;
+    transition: background-color .1s linear;
+    @include flex(center,center);
+    &:hover{
+        background-color: $light-grey;
+    };
+};
+
+.toggle-calender-button.active{
+    transform: rotate(180deg);
+};

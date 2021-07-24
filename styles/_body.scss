@@ -1,0 +1,44 @@
+.calender__body{
+    display: none;
+    width: $calender-width;
+    // height: calc(#{$calender-width} + #{$header-height});
+};
+
+.calender__body.visible{
+    display: block;
+    .calender__month-display{
+        width: 100%;
+        height: $header-height;
+        border-top: 1px solid $light-grey;
+        border-bottom: 1px solid $light-grey;
+    };
+};
+
+.calender__days-display{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+};
+
+.calender__days--element, .calender__days--element-empty{
+    grid-column: span 1;
+    height: calc(#{$calender-width} / 7);
+    @include flex(center,center);
+};
+
+.calender__days--element{
+    transition: background-color .1s linear;
+    cursor: default;
+    &:hover{
+        background-color: $light-grey;
+    }
+};
+
+.calender__days--element.selected{
+    background-color: $blue;
+    color: #fff;
+};
+
+.calender__days--element.selected__between{
+    background-color: $light-grey;
+    border-radius: 0;
+}

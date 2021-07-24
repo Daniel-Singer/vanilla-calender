@@ -1,0 +1,41 @@
+@import './styles/settings';
+@import './styles/icons';
+@import './styles/head';
+@import './styles/buttons';
+@import './styles/body';
+@import './styles/month-display';
+
+html{
+    height: 100%;
+    width: 100%;
+};
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+
+.vanilla-calender{
+    font-family: 'Roboto';
+    width: $calender-width;
+    margin-left: 40px;
+    margin-top: 40px;
+};
+
+.vanillender.active{
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,.2);
+};
+
+
+
+
+
+
+
+
+
+

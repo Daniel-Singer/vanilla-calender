@@ -1,0 +1,13 @@
+.calender__month-display{
+    grid-column: 1 / -1;
+    @include flex(center,space-between );
+    height: $header-height;
+    width: 100%;
+    .month-text{
+        height: 100%;
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        @include flex(center,center )
+    };
+};

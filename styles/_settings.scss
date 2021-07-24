@@ -1,0 +1,15 @@
+
+$header-height: 36px;
+$calender-width: calc(#{$header-height} * 7);
+$s-padding: 8px;
+$toggle-height: calc(#{$header-height} - (#{$s-padding} * 2));
+$radius: 2px;
+
+$light-grey: rgb(238, 238, 238);
+$blue: #2979ff;
+
+@mixin flex($align,$justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+};
